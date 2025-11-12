@@ -1075,20 +1075,10 @@ func (in *IncidentioConfig) DeepCopyInto(out *IncidentioConfig) {
 		*out = new(URL)
 		**out = **in
 	}
-	if in.URLFile != nil {
-		in, out := &in.URLFile, &out.URLFile
-		*out = new(string)
-		**out = **in
-	}
 	if in.AlertSourceToken != nil {
 		in, out := &in.AlertSourceToken, &out.AlertSourceToken
 		*out = new(corev1.SecretKeySelector)
 		(*in).DeepCopyInto(*out)
-	}
-	if in.AlertSourceTokenFile != nil {
-		in, out := &in.AlertSourceTokenFile, &out.AlertSourceTokenFile
-		*out = new(string)
-		**out = **in
 	}
 	if in.Timeout != nil {
 		in, out := &in.Timeout, &out.Timeout

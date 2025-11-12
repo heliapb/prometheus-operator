@@ -1087,7 +1087,7 @@
                         description: 'IncidentioConfig configures notifications via Incident.io.\nIt requires Alertmanager >= 0.29.0.',
                         properties: {
                           alertSourceToken: {
-                            description: 'alertSourceToken is the key used to authenticate with the alert source in incident.io.\nThe alert source token is used to authenticate with incident.io.\nAlertSourceToken and AlertSourceTokenFile are mutually exclusive.',
+                            description: 'alertSourceToken is the key used to authenticate with the alert source in incident.io.\nThe alert source token is used to authenticate with incident.io.',
                             properties: {
                               key: {
                                 description: 'The key of the secret to select from.  Must be a valid secret key.',
@@ -1108,10 +1108,6 @@
                             ],
                             type: 'object',
                             'x-kubernetes-map-type': 'atomic',
-                          },
-                          alertSourceTokenFile: {
-                            description: 'alertSourceTokenFile is the key used to authenticate with the alert source in incident.io.\nThe alert source token is used to authenticate with incident.io.\nAlertSourceToken and AlertSourceTokenFile are mutually exclusive.',
-                            type: 'string',
                           },
                           httpConfig: {
                             description: 'httpConfig defines the HTTP client configuration for RocketChat API requests.',
@@ -1769,10 +1765,6 @@
                           url: {
                             description: 'url to send the incident.io alert.\nThis would typically be provided by incident.io team when setting up an alert source.',
                             pattern: '^https?://.+$',
-                            type: 'string',
-                          },
-                          urlFile: {
-                            description: 'urlFile to send the incident.io alert.\nThis would typically be provided by incident.io team when setting up an alert source.',
                             type: 'string',
                           },
                         },

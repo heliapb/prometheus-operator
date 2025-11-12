@@ -1770,35 +1770,11 @@ func checkIncidentioConfigs(
 			return err
 		}
 
-		if config.URL == nil && (config.URLFile == nil || *config.URLFile == "") {
-			return fmt.Errorf("one of url or urlFile must be configured for incident.io config")
-		}
-
-		if config.URL != nil && config.URLFile != nil && *config.URLFile != "" {
-			return fmt.Errorf("at most one of url & urlFile must be configured for incident.io config")
-		}
-
 		if config.URL != nil {
 			if _, err := validation.ValidateURL(strings.TrimSpace(string(*config.URL))); err != nil {
 				return fmt.Errorf("failed to validate incident.io URL: %w", err)
 			}
 		}
-
-		if config.AlertSourceToken != nil && config.AlertSourceTokenFile != nil && *config.AlertSourceTokenFile != "" {
-			return fmt.Errorf("at most one of AlertSourceToken & AlertSourceTokenFile must be configured for incident.io config")
-		}
-
-		if config.HTTPConfig != nil && config.HTTPConfig.Authorization != nil &&
-			(config.AlertSourceToken != nil || (config.AlertSourceTokenFile != nil && *config.AlertSourceTokenFile != "")) {
-			return fmt.Errorf("cannot specify AlertSourceToken or AlertSourceTokenFile when using HTTPConfig Authorization for incident.io config")
-		}
-
-		if config.AlertSourceToken == nil &&
-			(config.AlertSourceTokenFile == nil || *config.AlertSourceTokenFile == "") &&
-			(config.HTTPConfig == nil || config.HTTPConfig.Authorization == nil) {
-			return fmt.Errorf("at least one of AlertSourceToken, AlertSourceTokenFile or HTTPConfig Authorization must be configured for incident.io config")
-		}
-
 		if config.AlertSourceToken != nil {
 			if _, err := store.GetSecretKey(ctx, namespace, *config.AlertSourceToken); err != nil {
 				return fmt.Errorf("failed to retrieve incident.io alert source token: %w", err)

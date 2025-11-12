@@ -1299,20 +1299,10 @@ type IncidentioConfig struct {
 	// This would typically be provided by incident.io team when setting up an alert source.
 	// +optional
 	URL *URL `json:"url,omitempty"`
-	// urlFile to send the incident.io alert.
-	// This would typically be provided by incident.io team when setting up an alert source.
-	// +optional
-	URLFile *string `json:"urlFile,omitempty"`
 	// alertSourceToken is the key used to authenticate with the alert source in incident.io.
 	// The alert source token is used to authenticate with incident.io.
-	// AlertSourceToken and AlertSourceTokenFile are mutually exclusive.
 	// +optional
 	AlertSourceToken *v1.SecretKeySelector `json:"alertSourceToken,omitempty"`
-	// alertSourceTokenFile is the key used to authenticate with the alert source in incident.io.
-	// The alert source token is used to authenticate with incident.io.
-	// AlertSourceToken and AlertSourceTokenFile are mutually exclusive.
-	// +optional
-	AlertSourceTokenFile *string `json:"alertSourceTokenFile,omitempty"`
 	// maxAlerts defines the maximum number of alerts to be sent per webhook message.
 	// When 0, all alerts are included in the webhook payload.
 	// +optional

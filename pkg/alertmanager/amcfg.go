@@ -1997,20 +1997,12 @@ func (cb *ConfigBuilder) convertIncidentioConfig(ctx context.Context, in monitor
 		out.URL = url.String()
 	}
 
-	if in.URLFile != nil && *in.URLFile != "" {
-		out.URLFile = *in.URLFile
-	}
-
 	if in.AlertSourceToken != nil {
 		token, err := cb.store.GetSecretKey(ctx, crKey.Namespace, *in.AlertSourceToken)
 		if err != nil {
 			return nil, fmt.Errorf("failed to get Incidentio alertSourceToken: %w", err)
 		}
 		out.AlertSourceToken = token
-	}
-
-	if in.AlertSourceTokenFile != nil && *in.AlertSourceTokenFile != "" {
-		out.AlertSourceTokenFile = *in.AlertSourceTokenFile
 	}
 
 	httpConfig, err := cb.convertHTTPConfig(ctx, in.HTTPConfig, crKey)

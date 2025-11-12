@@ -1316,7 +1316,6 @@ spec:
                             description: |-
                               alertSourceToken is the key used to authenticate with the alert source in incident.io.
                               The alert source token is used to authenticate with incident.io.
-                              AlertSourceToken and AlertSourceTokenFile are mutually exclusive.
                             properties:
                               key:
                                 description: The key of the secret to select from.  Must
@@ -1339,12 +1338,6 @@ spec:
                             - key
                             type: object
                             x-kubernetes-map-type: atomic
-                          alertSourceTokenFile:
-                            description: |-
-                              alertSourceTokenFile is the key used to authenticate with the alert source in incident.io.
-                              The alert source token is used to authenticate with incident.io.
-                              AlertSourceToken and AlertSourceTokenFile are mutually exclusive.
-                            type: string
                           httpConfig:
                             description: httpConfig defines the HTTP client configuration
                               for RocketChat API requests.
@@ -2069,17 +2062,10 @@ spec:
                             pattern: ^(0|(([0-9]+)y)?(([0-9]+)w)?(([0-9]+)d)?(([0-9]+)h)?(([0-9]+)m)?(([0-9]+)s)?(([0-9]+)ms)?)$
                             type: string
                           url:
-                            allOf:
-                            - pattern: ^https?://.+$
-                            - pattern: ^https?://.+
                             description: |-
                               url to send the incident.io alert.
                               This would typically be provided by incident.io team when setting up an alert source.
-                            type: string
-                          urlFile:
-                            description: |-
-                              urlFile to send the incident.io alert.
-                              This would typically be provided by incident.io team when setting up an alert source.
+                            pattern: ^https?://.+$
                             type: string
                         type: object
                       type: array

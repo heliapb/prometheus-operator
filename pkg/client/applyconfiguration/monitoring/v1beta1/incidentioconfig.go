@@ -25,14 +25,12 @@ import (
 // IncidentioConfigApplyConfiguration represents a declarative configuration of the IncidentioConfig type for use
 // with apply.
 type IncidentioConfigApplyConfiguration struct {
-	SendResolved         *bool                         `json:"sendResolved,omitempty"`
-	HTTPConfig           *HTTPConfigApplyConfiguration `json:"httpConfig,omitempty"`
-	URL                  *monitoringv1beta1.URL        `json:"url,omitempty"`
-	URLFile              *string                       `json:"urlFile,omitempty"`
-	AlertSourceToken     *v1.SecretKeySelector         `json:"alertSourceToken,omitempty"`
-	AlertSourceTokenFile *string                       `json:"alertSourceTokenFile,omitempty"`
-	MaxAlerts            *int32                        `json:"maxAlerts,omitempty"`
-	Timeout              *monitoringv1.Duration        `json:"timeout,omitempty"`
+	SendResolved     *bool                         `json:"sendResolved,omitempty"`
+	HTTPConfig       *HTTPConfigApplyConfiguration `json:"httpConfig,omitempty"`
+	URL              *monitoringv1beta1.URL        `json:"url,omitempty"`
+	AlertSourceToken *v1.SecretKeySelector         `json:"alertSourceToken,omitempty"`
+	MaxAlerts        *int32                        `json:"maxAlerts,omitempty"`
+	Timeout          *monitoringv1.Duration        `json:"timeout,omitempty"`
 }
 
 // IncidentioConfigApplyConfiguration constructs a declarative configuration of the IncidentioConfig type for use with
@@ -65,27 +63,11 @@ func (b *IncidentioConfigApplyConfiguration) WithURL(value monitoringv1beta1.URL
 	return b
 }
 
-// WithURLFile sets the URLFile field in the declarative configuration to the given value
-// and returns the receiver, so that objects can be built by chaining "With" function invocations.
-// If called multiple times, the URLFile field is set to the value of the last call.
-func (b *IncidentioConfigApplyConfiguration) WithURLFile(value string) *IncidentioConfigApplyConfiguration {
-	b.URLFile = &value
-	return b
-}
-
 // WithAlertSourceToken sets the AlertSourceToken field in the declarative configuration to the given value
 // and returns the receiver, so that objects can be built by chaining "With" function invocations.
 // If called multiple times, the AlertSourceToken field is set to the value of the last call.
 func (b *IncidentioConfigApplyConfiguration) WithAlertSourceToken(value v1.SecretKeySelector) *IncidentioConfigApplyConfiguration {
 	b.AlertSourceToken = &value
-	return b
-}
-
-// WithAlertSourceTokenFile sets the AlertSourceTokenFile field in the declarative configuration to the given value
-// and returns the receiver, so that objects can be built by chaining "With" function invocations.
-// If called multiple times, the AlertSourceTokenFile field is set to the value of the last call.
-func (b *IncidentioConfigApplyConfiguration) WithAlertSourceTokenFile(value string) *IncidentioConfigApplyConfiguration {
-	b.AlertSourceTokenFile = &value
 	return b
 }
 

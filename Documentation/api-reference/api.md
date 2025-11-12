@@ -26899,19 +26899,6 @@ This would typically be provided by incident.io team when setting up an alert so
 </tr>
 <tr>
 <td>
-<code>urlFile</code><br/>
-<em>
-string
-</em>
-</td>
-<td>
-<em>(Optional)</em>
-<p>urlFile to send the incident.io alert.
-This would typically be provided by incident.io team when setting up an alert source.</p>
-</td>
-</tr>
-<tr>
-<td>
 <code>alertSourceToken</code><br/>
 <em>
 <a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/#secretkeyselector-v1-core">
@@ -26922,22 +26909,7 @@ Kubernetes core/v1.SecretKeySelector
 <td>
 <em>(Optional)</em>
 <p>alertSourceToken is the key used to authenticate with the alert source in incident.io.
-The alert source token is used to authenticate with incident.io.
-AlertSourceToken and AlertSourceTokenFile are mutually exclusive.</p>
-</td>
-</tr>
-<tr>
-<td>
-<code>alertSourceTokenFile</code><br/>
-<em>
-string
-</em>
-</td>
-<td>
-<em>(Optional)</em>
-<p>alertSourceTokenFile is the key used to authenticate with the alert source in incident.io.
-The alert source token is used to authenticate with incident.io.
-AlertSourceToken and AlertSourceTokenFile are mutually exclusive.</p>
+The alert source token is used to authenticate with incident.io.</p>
 </td>
 </tr>
 <tr>
@@ -36444,19 +36416,6 @@ This would typically be provided by incident.io team when setting up an alert so
 </tr>
 <tr>
 <td>
-<code>urlFile</code><br/>
-<em>
-string
-</em>
-</td>
-<td>
-<em>(Optional)</em>
-<p>urlFile to send the incident.io alert.
-This would typically be provided by incident.io team when setting up an alert source.</p>
-</td>
-</tr>
-<tr>
-<td>
 <code>alertSourceToken</code><br/>
 <em>
 <a href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/#secretkeyselector-v1-core">
@@ -36467,22 +36426,7 @@ Kubernetes core/v1.SecretKeySelector
 <td>
 <em>(Optional)</em>
 <p>alertSourceToken is the key used to authenticate with the alert source in incident.io.
-The alert source token is used to authenticate with incident.io.
-AlertSourceToken and AlertSourceTokenFile are mutually exclusive.</p>
-</td>
-</tr>
-<tr>
-<td>
-<code>alertSourceTokenFile</code><br/>
-<em>
-string
-</em>
-</td>
-<td>
-<em>(Optional)</em>
-<p>alertSourceTokenFile is the key used to authenticate with the alert source in incident.io.
-The alert source token is used to authenticate with incident.io.
-AlertSourceToken and AlertSourceTokenFile are mutually exclusive.</p>
+The alert source token is used to authenticate with incident.io.</p>
 </td>
 </tr>
 <tr>
