@@ -1246,6 +1246,20 @@ uint64
 </tr>
 <tr>
 <td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
+</td>
+</tr>
+<tr>
+<td>
 <code>scrapeClassicHistograms</code><br/>
 <em>
 bool
@@ -1712,6 +1726,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.
 Only valid in Prometheus versions 2.27.0 and newer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -4280,6 +4308,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.</p>
 <p>It requires Prometheus &gt;= v2.27.0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -11681,6 +11723,20 @@ list restricting them.</p>
 <tbody>
 <tr>
 <td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
+</td>
+</tr>
+<tr>
+<td>
 <code>scrapeClassicHistograms</code><br/>
 <em>
 bool
@@ -12786,6 +12842,20 @@ uint64
 </tr>
 <tr>
 <td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
+</td>
+</tr>
+<tr>
+<td>
 <code>scrapeClassicHistograms</code><br/>
 <em>
 bool
@@ -13224,6 +13294,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.
 Only valid in Prometheus versions 2.27.0 and newer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -18185,6 +18269,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.</p>
 <p>It requires Prometheus &gt;= v2.27.0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -23590,6 +23688,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.
 Only valid in Prometheus versions 2.27.0 and newer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -33828,6 +33940,20 @@ uint64
 <em>(Optional)</em>
 <p>labelValueLengthLimit defines the per-scrape limit on length of labels value that will be accepted for a sample.
 Only valid in Prometheus versions 2.27.0 and newer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, the feature flag becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
