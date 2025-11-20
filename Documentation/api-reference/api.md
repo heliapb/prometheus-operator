@@ -3157,6 +3157,20 @@ histogram with custom buckets.</p>
 </tr>
 <tr>
 <td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, this becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
+</td>
+</tr>
+<tr>
+<td>
 <code>scrapeClassicHistograms</code><br/>
 <em>
 bool
@@ -9166,6 +9180,20 @@ histogram with custom buckets.</p>
 </tr>
 <tr>
 <td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, this becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
+</td>
+</tr>
+<tr>
+<td>
 <code>scrapeClassicHistograms</code><br/>
 <em>
 bool
@@ -15020,6 +15048,20 @@ bool
 <p>convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native
 histogram with custom buckets.</p>
 <p>It requires Prometheus &gt;= v3.4.0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, this becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -22563,6 +22605,20 @@ bool
 <p>convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native
 histogram with custom buckets.</p>
 <p>It requires Prometheus &gt;= v3.4.0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, this becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
@@ -31205,6 +31261,20 @@ bool
 <p>convertClassicHistogramsToNHCB defines whether to convert all scraped classic histograms into a native
 histogram with custom buckets.</p>
 <p>It requires Prometheus &gt;= v3.4.0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scrapeNativeHistograms</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>scrapeNativeHistograms defines whether to enable scraping of native histograms.
+In v3.9.0+, this becomes a no-op and this configuration is required.
+It requires Prometheus &gt;= v3.8.0.</p>
 </td>
 </tr>
 <tr>
